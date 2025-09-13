@@ -56,7 +56,7 @@ def train(
 
         scheduler.step()
 
-        # validation
+
         model.eval()
         val_correct = 0
         val_total = 0
@@ -83,3 +83,5 @@ def train(
 
 if __name__ == "__main__":
     train(epochs=30, batch_size=128, lr=0.1, save_path="saved_models/best_model.pth")
+
+
